@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 import classes from '../css/custom.module.css';
-
+import {gsap} from "gsap";
 function ServicesSection() {
+ 
     return (
         <>
-        <div className={`${classes.services} h-[100%] z-[30] w-full `}>
+        <div className={`${classes.services_wrapper} h-[100%] z-[30] w-full `}>
                 <div className="flex flex-row justify-between">
                     <div className="h-screen w-[40%]  flex flex-col">
                             <div className="text-[74px] p-10"> Our Services</div>
@@ -12,13 +13,13 @@ function ServicesSection() {
                     </div>
                     <div className=" h-screen w-[60%] grid grid-rows-2 gap-1">
 
-                            <div className=" w-[100%] h-[100%] grid grid-cols-2 gap-1">
-                                    <div className="w-[100%]  p-10 h-[100%] ">
+                            <div className=" w-[100%] h-[100%] text-white grid grid-cols-2 gap-1">
+                                    <div className={`${classes.services} w-[100%] pointer  border p-10 h-[100%]`}>
                                         <h3 className="text-[34px]">Web Design</h3>
                                         <p className="text-[18px]">A business must have a website, we can help you designing your website from scratch and production ready.
                                         </p>
                                     </div>
-                                    <div className="w-[100%] p-10 h-[100%]">
+                                    <div className={`${classes.services} w-[100%] pointer  border p-10 h-[100%]`}>
                                     <h3 className="text-[34px]">Android Applications</h3>
                                         <p className="text-[18px]">A business must have a website, we can help you designing your website from scratch and production ready.
                                         </p>
@@ -26,15 +27,15 @@ function ServicesSection() {
                                     </div>
                                     
                             </div>
-                            <div className=" w-[100%] h-[100%] grid grid-cols-2 gap-1">
+                            <div className=" w-[100%] text-white h-[100%] grid grid-cols-2 gap-1">
                         
-                                    <div className="w-[100%] p-10 h-[100%]">
+                                    <div className={`${classes.services} w-[100%] pointer  border p-10 h-[100%]`}>
                                     <h3 className="text-[34px]">Software Solution</h3>
                                         <p className="text-[18px]">A business must have a website, we can help you designing your website from scratch and production ready.
                                         </p>
                                     </div>
-                                    <div className="w-[100%] p-10 h-[100%]">
-                                    <h3 className="text-[34px]">UI/UX Designing</h3>
+                                    <div className={`${classes.services} w-[100%] pointer  border p-10 h-[100%]`}>
+                                        <h3 className="text-[34px]">UI/UX Designing</h3>
                                         <p className="text-[18px]">A business must have a website, we can help you designing your website from scratch and production ready.
                                         </p>
                                     </div>

@@ -220,6 +220,13 @@
 }
 
 
-/* .services {
-   position: relative;
-} */
+.services {
+   background-color: #3F3D3D;
+   background-position: top;
+   transition: background-color 0.5s ease-in-out;
+}
+.services:hover{
+
+    background-color: #BB3636;
+}
+
