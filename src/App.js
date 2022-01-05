@@ -11,6 +11,7 @@ import {BrowserRouter, Routes, Route}  from 'react-router-dom';
 
 function App() {
   return (
+   
     <BrowserRouter>
     <NavBar/>
     <Routes>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>} />
     </Routes>
     </BrowserRouter>
+
   );
 }
 

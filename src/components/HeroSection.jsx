@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import classes from '../css/custom.module.css';
 import HeroCard from './HeroCard';
-
+import { gsap } from "gsap";
 
 
 
@@ -11,6 +11,10 @@ function HeroSection() {
     // const prevItem = () => {
     //     setrotateValue(rotateValue - 90);
     // };
+    const nextRef = useRef();
+    useEffect(()=>{
+                // gsap.to(nextRef.current, {rotation: 360 , duration: 2 })
+    },[]);
 
     const nextItem = () => {
         setrotateValue(rotateValue + 60);
