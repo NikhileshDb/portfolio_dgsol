@@ -36,9 +36,9 @@ function NavBar() {
     
     return (
         <>
-            <div className=" bg-gradient-to-r from-[#FCA311] to-[#3CB6ED] h-[10vh] pl-[10%] pr-10 flex flex-row justify-between items-center">
-                <div className={`${url} flex flex-row justify-start items-center text-[34px] font-bold text-white hover:text-[#40B6E9] z-20`}>
-                    <GiCircleClaws /> 
+            <div className="z-[100] bg-gradient-to-r from-[#DCF7F2] via-[#F6E3D9] to-[#ffffff] h-[10vh] w-[100%] pl-[10%] pr-10 flex flex-row justify-between items-center">
+                <div className={`${url} flex flex-row justify-start items-center text-[34px] font-bold text-[#1f5355] hover:scale-[110%] z-20`}>
+                    <GiCircleClaws className="" /> 
                     <a href="/">DGSol</a>
                 </div>
                 <div className="z-20 flex items-center bg-red-500  rounded-[50px]">
@@ -53,7 +53,7 @@ function NavBar() {
                         {menuData.map((item, index) => 
                         (
                         <li key={item.id} className={`${classes.underline_animation} cursor-pointer`}>
-                            <Link  className={`text-white`} to={item.link}>{item.title}</Link>
+                            <Link  className={`text-[#1f5355]`} to={item.link}>{item.title}</Link>
                         </li>
                         ))}
                         

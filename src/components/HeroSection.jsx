@@ -7,13 +7,9 @@ import { gsap } from "gsap";
 
 function HeroSection() {
     let [rotateValue, setrotateValue] = useState(0);
-
-    // const prevItem = () => {
-    //     setrotateValue(rotateValue - 90);
-    // };
-    const nextRef = useRef();
+    const playButton = useRef();
     useEffect(()=>{
-                // gsap.to(nextRef.current, {rotation: 360 , duration: 2 })
+                gsap.fromTo(playButton.current,{x:-600}, {x: 0 , duration: 3 })
     },[]);
 
     const nextItem = () => {
@@ -21,26 +17,19 @@ function HeroSection() {
     };
     return (
         <>
-            <div className="overflow-hidden relative flex flex-row justify-between items-center pr-[5vw] h-screen w-full bg-gradient-to-r from-[#FCA311] to-[#3CB6ED]">
+            <div className="overflow-hidden relative flex flex-row justify-between items-center pr-[5vw] h-screen w-full bg-gradient-to-r from-[#DCF7F2] via-[#F6E3D9] to-[#ffffff]">
 
                 {/* Circle controller navigation start */}
                 <div className="flex flex-col h-[30vh] pb-[9vh]  w-[55vw] justify-evenly items-center">
-                    {/* <div className="z-20 active:scale-95" onClick={prevItem}>
-                        <img className={`${classes.top__reverse} h-10 w-10)`} src={process.env.PUBLIC_URL + 'images/arrow.svg'} />
-                    </div> */}
+              
                     <div className={`${classes.small_circle} font-bold`} style={{ transform: `rotate(${rotateValue}deg)` }}>
-                        {/* <div className={`${classes.featured__card} ${classes.s_four} text-black`}>UI/UX DSIGN</div>
-                        <div className={`${classes.featured__card} ${classes.s_one} text-black`}>WEB DESIGN</div>
-                        <div className={`${classes.featured__card} ${classes.s_two} text-black`}>ANDROID APP</div>
-                        <div className={`${classes.featured__card} ${classes.s_three} text-black`}>WEB APP</div>
-                        <div className={`${classes.featured__card} ${classes.s_five} text-black`}>iOS APP</div>
-                        <div className={`${classes.featured__card} ${classes.s_six} text-black`}>SEO</div> */}
+                      
                     </div>
                  
 
 
 
-                    <div className="active:scale-95 z-40" onClick={nextItem}>
+                    <div ref={playButton} className="active:scale-95 z-40" onClick={nextItem}>
                         <img className={`${classes.next__button} h-40 w-40`} src={process.env.PUBLIC_URL + 'images/arrow.svg'} alt-text="next" />
                     </div>
                 </div>
@@ -49,26 +38,7 @@ function HeroSection() {
                 {/* Overlay */}
                 <div className={`${classes.overlay} text-black`}></div>
 
-                {/* Starting of Circle */}
-                {/* <div className={`${classes.circle}`} style={{ transform: `rotate(${rotateValue}deg)` }}>
-                    <div className={`${classes.featured__card} ${classes.one}`}>
-                        <HeroCard />
-                    </div>
-                    <div className={`${classes.featured__card} ${classes.two}`}>
-                        <HeroCard />
-                    </div>
-                    <div className={`${classes.featured__card} ${classes.three}`}>
-                        <HeroCard />
-                    </div>
-                    <div className={`${classes.featured__card} ${classes.four}`}>
-                        <HeroCard />
-                    </div>
-                </div> */}
-
-                {/* Text Box utilities to fill up the empty space in the left side of the her section */}
-                <div className={`${classes.text_box}`} >
-                    {/* <h3 className="text-gray-500 text-[24px] font-semibold">We help brands to do good and looks good</h3> */}
-                </div>
+            
 
                 <div className={`${classes.container} `} >
                     <div className={`${classes.card_stack}`} style={{ transform: `rotateY(${rotateValue}deg)` }}>
