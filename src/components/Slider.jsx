@@ -46,7 +46,7 @@ function Slider() {
                         key={obj.id}
                         className={slideIndex === index + 1 ? `${classes.slide} ${classes.active_anim}` : `${classes.slide}`}>
                         <img id="image" src={process.env.PUBLIC_URL + `/images/img${index + 1}.jpg`} />
-                      <div className=" text_effect sm:top-[25%] absolute sm:w-[50%] w-[75%] top-[10%]  left-[10%] backdrop-blur-lg py-[20px] px-[20px]">
+                      <div className=" text_effect sm:top-[25%] absolute sm:w-[50%] w-[75%] top-[20%]  left-[10%] backdrop-blur-lg py-[20px] px-[20px]">
                       <p className=" sm:text-[50px] sm:font-bold  text-[#003049] text-[34px]  bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ffffff] font-semibold">{obj.title}</p>
                         <p className={`${classes.testimonials_heading}   sm:text-[24px]  text-[#FFFF] text-[18px]`}>{obj.subTitle}</p>
                       </div>
