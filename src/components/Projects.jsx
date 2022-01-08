@@ -19,7 +19,7 @@ function Projects() {
     };
     return (
  
-        <div className="overflow-hidden relative flex flex-row justify-between items-center pr-[5vw] h-screen w-full bg-gradient-to-r from-[#DCF7F2] via-[#F6E3D9] to-[#DCF7F2]">
+        <div className="sm:flex overflow-hidden relative hidden flex-row justify-between items-center pr-[5vw] h-screen w-full bg-gradient-to-r from-[#DCF7F2] via-[#F6E3D9] to-[#DCF7F2]">
 
         {/* Circle controller navigation start */}
         <div className="flex flex-col h-[30vh] pb-[9vh]  w-[55vw] justify-evenly items-center">
@@ -32,15 +32,15 @@ function Projects() {
 
 
             <div ref={playButton} className="active:scale-90 z-40" onClick={nextItem}>
-                <img className={`${classes.next__button} h-40 w-40`} src={process.env.PUBLIC_URL + 'images/arrow.svg'} alt-text="next" />
+                <img className={`${classes.next__button} sm:h-40 sm:w-40 h-[30px] w-[30px] `} src={process.env.PUBLIC_URL + 'images/arrow.svg'} alt-text="next" />
             </div>
         </div>
         {/* Circle controller Navigation End */}
 
         {/* Overlay */}
-        <div ref={overlayRef} className={`${classes.overlay} text-black]`}></div>
-        <div id="text_effect" className="text-[54px] bottom-[390px] uppercase left-[-160px] rotate-[270deg] text-[#003049] font-semibold z-[100] absolute">Recent Projects</div>
-        <div id="text_effect" className="text-[20px] left-[0px] bottom-[315px] rotate-[270deg] text-[#003049] font-semibold z-[100] absolute">Projects we are working on</div>
+        <div ref={overlayRef} className={`${classes.overlay} sm:block hidden text-black]`}></div>
+        <div id="text_effect" className="sm:text-[54px] text-[26px] sm:top-[400px] sm:left-[-160px] top-[0] uppercase  left-[23%] pt-[10px] sm:rotate-[270deg] rotate-[0deg] text-[#003049] font-semibold z-[80] absolute">Recent Projects</div>
+        <div id="text_effect" className="text-[20px]  sm:left-[0px] sm:top-[530px] left-[23%] top-[40px] sm:rotate-[270deg] text-[#003049] font-semibold z-[80] absolute">Projects we are working on</div>
     
 
         <div className={`${classes.container} `} >

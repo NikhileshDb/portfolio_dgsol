@@ -7,7 +7,7 @@ import rightArrow from '../css/icons/right-arrow.svg';
 
 
 export default function BtnSlider({ direction, moveSlide }) {
-  console.log(direction, moveSlide);
+ 
 
   return (
     <button

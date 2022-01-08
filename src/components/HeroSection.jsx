@@ -4,7 +4,7 @@ import Slider from './Slider';
 function HeroSection() {
     return (
         
-         <div className="bg-black">
+         <div className="pt-[70px]">
           <Slider/>
          </ div>
       

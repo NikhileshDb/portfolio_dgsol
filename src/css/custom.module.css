@@ -78,6 +78,15 @@
     z-index: 40;
 }
 
+@media screen and (max-width: 700px){
+    .small_circle {
+      height: 60px;
+      width:60px;
+      bottom: 28px;
+      left: 46%;
+    }
+  }
+
 .s_one{
     top: 55px;
     right: 55px;
@@ -153,6 +162,15 @@
     
 }
 
+ @media screen and (max-width: 700px){
+    .next__button {
+      height: 20px;
+      width:20px;
+      position: absolute;
+      bottom:42px;
+      left: 50%;
+    }
+  }
 
 
 /* Card Stack Designing */
@@ -166,6 +184,14 @@
     right: 70px;
     bottom: 15px;
 }
+
+@media screen and (max-width: 700px){
+    .container {
+        height: 50%;
+        width: 100%;
+    }
+  }
+
 
 .card_stack {
     position: absolute;
@@ -361,7 +387,7 @@
 /* Slider CSS */
 .container_slider {
     max-width: 100%;
-    height: 600px;
+    height: 680px;
     margin: 0 auto 0;
     position: relative;
     overflow: hidden;
@@ -369,7 +395,8 @@
   }
   @media screen and (max-width: 700px){
     .container_slider {
-      margin: 100px 10px 0;
+      margin: 0 auto 0;
+      height: 500px;
     }
   }
   .slide {
@@ -377,7 +404,7 @@
     height: 100%;
     position: absolute;
     opacity: 0;
-    transition: opacity ease-in-out 0.4s;
+    /* transition: opacity ease-in-out 0.4s; */
   }
   .slide img {
     width: 100%;
@@ -385,14 +412,15 @@
     object-fit: cover;
   }
   .active_anim {
-    opacity: 1;
+    opacity: 100%;
+   
   }
   
   .btn_slide {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #ffffff;
+    background: #ffffff4b;
     border: 1px solid rgba(34, 34, 34, 0.287);
     position: absolute;
     display: flex;
@@ -418,7 +446,7 @@
   }
   
   
-  .container-dots {
+  .container_dots {
     position: absolute;
     bottom: 10px;
     left: 50%;
