@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React, { useEffect} from 'react';
 import classes from '../css/custom.module.css';
 import {BiRightArrow} from 'react-icons/bi';
 import gsap from 'gsap/all';
@@ -12,7 +12,7 @@ function ServicesSection() {
     return (
 
         <>
-        <div className={`${classes.services_wrapper} bg-gradient-to-r from-[#DCF7F2] via-[#F6E3D9] to-[#ffffff] sm:h-screen z-[30] w-full `}>
+        <div className={`${classes.services_wrapper} sm:bg-gradient-to-r bg-white from-[#DCF7F2] via-[#F6E3D9] to-[#ffffff] sm:h-screen z-[30] w-full `}>
                 <div className={`${classes} sm:flex sm:flex-row flex-cols sm:justify-between`}>
                     <div className="sm:h-screen sm:w-[40%]   sm:flex sm:flex-col ">
                             <div id="text_effect" className={`${classes} bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ff48f0] sm:text-[74px] text-[48px]  sm:p-10 pt-10 pl-10 text-white font-semibold`}> Our Services</div>
