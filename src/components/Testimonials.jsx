@@ -7,15 +7,9 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import { gsap } from "gsap";
 
 function Testimonials({ slides }) {
-    const wavesRef = useRef();
-    const animation = gsap.timeline();
+
     useEffect(() => {
-        //    animation.fromTo("#one", {x: -900}, {x:0, duration:.5})
-        //    .fromTo("#two", {x: -900}, {x:0, duration:.5})
-        //    .fromTo("#three", {x: -900}, {x:0, duration:.5});
 
-
-        //    gsap.fromTo(wavesRef.current, {autoAlpha:1, y:30, x:-100},{x:0, duration:3, autoAlpha:3, repeat:-1, yoyo: true, repeatDelay:0});
         gsap.fromTo("#text_effect", { x: 10, alpha: 0 }, { x: 0, alpha: 1, duration: 2 })
     });
 
@@ -47,6 +41,7 @@ function Testimonials({ slides }) {
                     <div className="text-[64px] absolute text-[#8A5FBB] top-1 left-2">“</div>
                     <div className='p-10'>
                         <p>{obj.message}</p>
+                        <p className="text-center p-4 font-bold">{obj.name}</p>
                     </div>
                     <div className="text-[64px] text-[#8A5FBB] absolute right-2 top-[100px]">”</div>
                     <img className={`${classes.avatar} bg-gray-300`} src={obj.image} />
@@ -54,7 +49,7 @@ function Testimonials({ slides }) {
                     <div className={`${classes.wave} bg-[#8A5FBB]`}></div>
 
                     <div className="left-[33.5%] z-20 absolute bottom-[50px] text-[20px] text-white">
-                        <p className="text-center p-4 font-bold">{obj.name}</p>
+                       
                         <div className="flex gap-5">
                             <BsFacebook />
                             <BsInstagram />
@@ -81,6 +76,7 @@ function Testimonials({ slides }) {
                                     <div className="text-[64px] absolute text-[#8A5FBB] top-1 left-2">“</div>
                                     <div className='p-10'>
                                         <p>{obj.message}</p>
+                                        <p className="text-center p-4 font-bold">{obj.name}</p>
                                     </div>
 
                                     <div className="text-[64px] text-[#8A5FBB] absolute right-2 top-[100px]">”</div>
@@ -88,7 +84,7 @@ function Testimonials({ slides }) {
                                     <div className={`${classes.wave} bg-[#8A5FBB]`}></div>
 
                                     <div className="left-[33.5%] z-20 absolute bottom-[50px] text-[20px] text-white">
-                                        <p className="text-center p-4 font-bold">{obj.name}</p>
+                                       
                                         <div className="flex gap-5">
                                             <BsFacebook />
                                             <BsInstagram />
@@ -100,10 +96,6 @@ function Testimonials({ slides }) {
                         </div>
                     ))}
                 </div>
-
-
-
-
             </div>
         </div>
     )
