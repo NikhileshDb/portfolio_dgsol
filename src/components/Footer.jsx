@@ -46,7 +46,7 @@ function Footer() {
     return (
         <>
 
-            <div className="h-[100%] w-[100%] py-10 px-[10%] bg-[#12465B] relative">
+            <div className="h-[100%] w-[100%] py-10 px-[5%] bg-[#12465B] relative">
                 <div className="sm:flex ">
                     <div className=" text-white h-[100%] w-[100%] p-5">
                         <h2 className="sm:text-[34px] text-[28px]">Digitized Solution</h2>
@@ -79,7 +79,7 @@ function Footer() {
                     </div>
                 </div>
                 <hr />
-                <div className="sm:flex py-[10px] pointer flex-row justify-between text-white text-[40px]">
+                <div className="sm:flex py-[10px] px-[5%] pointer flex-row justify-between text-white text-[40px]">
                     <div className="flex flex-row gap-6 items-center">
                         <FiPhoneCall />
                         <div>
