@@ -30,7 +30,7 @@ function Testimonials({ slides }) {
     }
     return (
         <div className="relative sm:h-screen w-[100%] sm:pt-0 bg-gradient-to-r from-[#DCF7F2] via-[#F6E3D9] to-[#DCF7F2] overflow-hidden">
-            <div id="text_effect" className={`${classes.testimonials_heading} sm:text-[54px] text-[34px] pt-10 z-10 text-center text-[#003049] font-semibold`}>Clients Reviews</div>
+            <div id="text_effect" className={`${classes} sm:text-[54px] text-[34px] pt-10 z-10 text-center  bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ff48f0]  font-semibold`}>Clients Reviews</div>
             <div id="text_effect" className="text-[18px] text-[#003049] z-10 text-center font-semibold">What our clients are saying</div>
 
 
