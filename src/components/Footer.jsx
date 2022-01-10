@@ -52,7 +52,7 @@ function Footer() {
                         <h2 className="sm:text-[34px] text-[28px]">Digitized Solution</h2>
                         <div className="h-[2.5px] bg-white w-[50%] my-5"></div>
                         <p>Today's business face more complex challenges then ever due to their rapidly changing market. Thus it is neccessary to equip your business with emerging technologies that can grab an advantage for your business. We modernize and digitize businesses like yours and help kick starts the business and future-proof businesses for the coming future that will help you grow with all the advantages and profits.</p>
-                        <div className="flex gap-4 text-[34px] py-[15px] ">
+                        <div className="flex gap-4 text-[34px] py-[15px] pointer ">
                             <GrFacebook className="transition ease-in-out delay-150 hover:-translate-y-2" />
                             <GrLinkedin className="transition ease-in-out delay-150 hover:-translate-y-2" />
                             <GrInstagram className="transition ease-in-out delay-150 hover:-translate-y-2" />
@@ -67,19 +67,19 @@ function Footer() {
 
 
                                 {serviceData.slice(0, 5).map((obj, index) => (
-                                    <li className="flex items-center gap-4 transition ease-in-out delay-150 hover:translate-x-2" key={index}> <MdPlayArrow />{obj.service}</li>
+                                    <li className="flex items-center pointer gap-4 transition ease-in-out delay-150 hover:translate-x-2" key={index}> <MdPlayArrow />{obj.service}</li>
                                 ))}
                             </ul>
                             <ul>
                                 {serviceData.slice(5, 10).map((obj, index) => (
-                                    <li className="flex items-center gap-4 transition ease-in-out delay-150 hover:translate-x-2" key={index}> <MdPlayArrow />{obj.service}</li>
+                                    <li className="flex items-center pointer gap-4 transition ease-in-out delay-150 hover:translate-x-2" key={index}> <MdPlayArrow />{obj.service}</li>
                                 ))}
                             </ul>
                         </div>
                     </div>
                 </div>
                 <hr />
-                <div className="sm:flex py-[10px] flex-row justify-between text-white text-[40px]">
+                <div className="sm:flex py-[10px] pointer flex-row justify-between text-white text-[40px]">
                     <div className="flex flex-row gap-6 items-center">
                         <FiPhoneCall />
                         <div>
@@ -104,7 +104,7 @@ function Footer() {
                 </div>
             </div>
 
-                <div className="w-full h-[35px] bg-[#0a2733] text-[#fff] text-center">2022 <span>&copy;</span> DigitizedSol</div>
+                <div className="w-full pt-[10px] h-[40px] bg-[#0a2733] text-[#fff] text-center">2022 <span>&copy;</span> DigitizedSol</div>
         </>
     )
 }

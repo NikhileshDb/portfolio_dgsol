@@ -15,7 +15,7 @@ function ServicesSection() {
         <div className={`${classes.services_wrapper} sm:bg-gradient-to-r bg-white from-[#DCF7F2] via-[#F6E3D9] to-[#ffffff] sm:h-screen z-[30] w-full `}>
                 <div className={`${classes} sm:flex sm:flex-row flex-cols sm:justify-between`}>
                     <div className="sm:h-screen sm:w-[40%]   sm:flex sm:flex-col ">
-                            <div id="text_effect" className={`${classes} bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ff48f0] sm:text-[74px] text-[48px]  sm:p-10 pt-10 pl-10 text-white font-semibold`}> Our Services</div>
+                            <div id="text_effect" className={`${classes} bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ff48f0] sm:text-[74px] text-[34px]  sm:p-10 pt-10 pl-10 text-white font-semibold`}> Our Services</div>
 
                             <div id="text_effect" className={`${classes}  bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] to-[#12465B] pb-5  sm:text-[60px] py-0 px-10`}>We help brands to do good and looks good</div>
                              <div className="sm:block hidden relative top-20 left-[8%] h-[10vh] w-[100%]"> 

@@ -21,7 +21,7 @@ function Contact() {
         <div  className="h-[500px] w-full bg-gradient-to-r from-[#DCF7F2] sm:pt-0 pt-10 via-[#F6E3D9] to-[#DCF7F2]">
             <div className='flex flex-row justify-evenly'>
                      <div className="h-[100%] w-[50%]">
-                         <h2 className="text-center  sm:text-[54px] text-[30px] bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ff48f0]  font-bold">Contact Us</h2>
+                         <h2 className="text-center  sm:text-[54px] text-[34px] bg-clip-text text-transparent  bg-gradient-to-r from-[#12465b] via-[#FFAB90] to-[#ff48f0]  font-bold">Contact Us</h2>
                         <div className="p-10">
                             <form ref={form} className="flex flex-col items-center gap-2" onSubmit={sendEmail}>
                                 <div className="">

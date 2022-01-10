@@ -10,6 +10,7 @@ import Projects from '../components/Projects';
 // import {SliderData} from '../LearnAlongTheWay/SliderData'; 
 import SmallServicePart from '../components/SmallServicePart';
 import dataReviews from '../data/dataReviews';
+import WhoWeAre from '../components/WhoWeAre';
 function HomePage() {
 
     return (
@@ -18,6 +19,7 @@ function HomePage() {
             <HeroSection/>
             <SmallServicePart/>
             <ServicesSection />
+            <WhoWeAre/>
           
             <Testimonials slides={dataReviews} />
             <Contact />
